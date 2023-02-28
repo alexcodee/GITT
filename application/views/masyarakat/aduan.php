@@ -20,7 +20,7 @@ echo '<h2>Selamat Datang ' . $_SESSION['nama'] . '</h2>';
     <div class="card">
         <img src="' . base_url('img/') . $data['foto'] . '" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Status:' . $status . '</h5>
+            <h5 class="card-title">Status:' . $data['status'] . '</h5>
             <p class="card-text">Laporan :' . $data['isi_laporan'] . '</p>
         </div>
     </div>

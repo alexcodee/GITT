@@ -46,4 +46,15 @@ class M_petugas extends CI_Model
     {
         $this->db->insert('tanggapan', $data);
     }
+    public function tampilPetugas()
+    {
+        $this->db->where('level=', 'petugas');
+        $query = $this->db->get('petugas');
+        return $query->result_array();
+    }
+
+    public function registrasi_petugas($data)
+    {
+        return $this->db->insert('petugas', $data);
+    }
 }
